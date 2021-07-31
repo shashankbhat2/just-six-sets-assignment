@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import styles from '../styles/Blog.module.css'
 
 //First Method: Fetch data on each request for Server Side Rendering
