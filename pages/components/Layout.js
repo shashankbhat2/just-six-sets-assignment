@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { Apps } from '@material-ui/icons/';
+import {MdApps} from 'react-icons/md'
 import styles from '../../styles/Layout.module.css'
 import Link from 'next/link'
 
@@ -32,7 +32,7 @@ const Layout = ({children}) => {
           </ul>
           <div className={styles.icons}>
               <div  className={styles.menu}>
-                <Apps />
+                <MdApps size='24px' />
               </div> 
               <div className={styles.avatar}>
                   <p>

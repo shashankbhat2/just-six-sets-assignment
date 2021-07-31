@@ -1,6 +1,5 @@
 import styles from '../styles/Home.module.css'
-import {Search} from '@material-ui/icons/'
-import { Mic } from '@material-ui/icons/';
+import {MdSearch, MdMic} from 'react-icons/md'
 import Link from 'next/link'
 
 const Home = () =>  {
@@ -14,11 +13,11 @@ const Home = () =>  {
             <form className={styles.g_form}>
               <div  className={styles.g_search}>
                 <div>
-                  <Search className={styles.search} />
+                  <MdSearch className={styles.search} size='18px' />
                 </div>
                 <input type="text" />
                 <div>
-                  <Mic className={styles.mic}/>
+                  <MdMic className={styles.mic} size='18px' />
                 </div>
               </div>
               <div className={styles.buttons}>
