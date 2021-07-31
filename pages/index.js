@@ -1,65 +1,133 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import Link from 'next/link'
+import AppsIcon from '@material-ui/icons/Apps';
+import Search from '@material-ui/icons/Search'
+import { Mic } from '@material-ui/icons';
 
-export default function Home() {
+
+const Home = () =>  {
   return (
-    <div className={styles.container}>
+    <>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"/>
       </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
-    </div>
+      <header>
+        <nav  className={styles.g_nav}>
+          <ul>
+            <li>
+              <Link href='/'>
+                <a>
+                  Gmail
+                </a>
+              </Link>
+            </li> 
+            <li>
+              <Link href='/'>
+                <a>
+                  Images
+                </a>
+              </Link>
+            </li> 
+          </ul>
+          <div className={styles.icons}>
+              <div  className={styles.menu}>
+                <AppsIcon />
+              </div> 
+              <div className={styles.avatar}>
+                  <p>
+                    J
+                  </p>
+              </div> 
+          </div>
+        </nav>
+      </header>
+      <main className={styles.g_main}>
+          <div>
+            <img src='/google.png'/>
+          </div>
+          <div className={styles.search_section}>
+            <form className={styles.g_form}>
+              <div  className={styles.g_search}>
+                <div className={styles.icons}>
+                  <Search className={styles.search} />
+                </div>
+                <input type="text" name='q' />
+                <div className={styles.icons}>
+                  <Mic className={styles.mic}/>
+                </div>
+              </div>
+              <div className={styles.buttons}>
+                <button>Google Search</button>
+                <Link href='/blog'>
+                  <button>I'm Feeling Lucky</button>
+                </Link>
+              </div>
+              <div className={styles.lang_options}>
+                 Google offered in:
+                 <a href="/">हिन्दी</a>
+                 <a href="/">বাংলা</a>
+                 <a href="/">తెలుగు</a>
+                 <a href="/">मराठी</a>
+                 <a href="/">தமிழ்</a>
+                 <a href="/">ગુજરાતી</a>
+                 <a href="/">ಕನ್ನಡ</a>
+                 <a href="/">മലയാളം</a>
+                 <a href="/">ਪੰਜਾਬੀ</a>
+              </div>
+            </form>
+          </div>
+        </main>
+        <footer className={styles.footer}>
+          <div>
+             <p>India</p> 
+          </div>
+          <div className={styles.footer_links}>
+            <ul >
+              <li>
+                <a href="/">
+                  About
+                </a>
+              </li>
+              <li>
+                <a href="/">
+                  Advertising
+                </a>
+              </li>
+              <li>
+                <a href="/">
+                  Business
+                </a>
+              </li>
+              <li>
+                <a href="/">
+                  How Search Works
+                </a>
+              </li>
+            </ul>
+            <ul>
+            <li>
+                <a href="/">
+                  Privacy
+                </a>
+              </li>
+              <li>
+                <a href="/">
+                  Terms
+                </a>
+              </li>
+              <li>
+                <a href="/">
+                  Settings
+                </a>
+              </li>
+            </ul>
+          </div>
+        </footer>
+    </>
   )
 }
+
+export default Home;
