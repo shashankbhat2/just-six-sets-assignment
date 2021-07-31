@@ -11,6 +11,7 @@ const Layout = ({children}) => {
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"/>
         <title>Google | Assignment</title>
+        <meta name="description" content="A clone of Google Homepage UI By Shashank Bhat" />
       </Head>
       <header>
         <nav  className={styles.g_nav}>
