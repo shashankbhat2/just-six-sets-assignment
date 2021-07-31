@@ -1,6 +1,6 @@
 import styles from '../styles/Home.module.css'
 import Search from '@material-ui/icons/Search'
-import { Mic } from '@material-ui/icons';
+import { Mic } from '@material-ui/icons/';
 import Link from 'next/link'
 
 const Home = () =>  {
