@@ -59,7 +59,7 @@
   
 .footer{
     bottom: 0;
-    position: absolute;
+    position: fixed;
     width: 100%;
     background-color: #F2F2F2;
     height: auto;

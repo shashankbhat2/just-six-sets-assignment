@@ -7,7 +7,9 @@ const Home = () =>  {
     <>
       <main className={styles.g_main}>
           <div>
-            <img src='/google.png' height='auto' width='auto'/>
+            <a href='/'>
+              <img src='/google.png' alt="google_logo" height='auto' width='auto'/>
+            </a>
           </div>
           <div className={styles.search_section}>
             <form className={styles.g_form}>
@@ -21,8 +23,8 @@ const Home = () =>  {
                 </div>
               </div>
               <div className={styles.buttons}>
-                <button>Google Search</button>
-                <Link href='/blog'>
+                <button type='submit'>Google Search</button>
+                <Link href='/blogs'>
                   <button>I'm Feeling Lucky</button>
                 </Link>
               </div>

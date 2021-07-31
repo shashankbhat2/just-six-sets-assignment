@@ -42,7 +42,9 @@ const Layout = ({children}) => {
           </div>
         </nav>
       </header>
+      <div>
       {children}
+      </div>
       <footer className={styles.footer}>
           <div>
              <p>India</p> 
