@@ -9,8 +9,9 @@ Create the clone of Google's homepage UI without the functionality and add a pag
 
 ### Tech
 
-- Nextjs 
+- Next.js 
 - CSS
+- react-icons
 
 ### Demo
 
