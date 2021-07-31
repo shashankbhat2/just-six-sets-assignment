@@ -7,7 +7,7 @@ const Home = () =>  {
     <>
       <main className={styles.g_main}>
           <div>
-            <img src='/google.png'/>
+            <img src='/google.png' height='auto' width='auto'/>
           </div>
           <div className={styles.search_section}>
             <form className={styles.g_form}>
