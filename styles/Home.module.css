@@ -81,12 +81,16 @@
 .lang_options{
   display: flex;
   flex-direction: row; 
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  justify-items: center;
   flex-wrap: wrap;
-  font-size: 12px;
+  font-size: 13px;
   list-style: none;
 }
 .lang_options > li{
-  margin: 0px 5px;
+  margin: 0px 8px;
 }
 .lang_options > li > a{
   color: darkblue;
