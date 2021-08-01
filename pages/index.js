@@ -6,12 +6,12 @@ const Home = () =>  {
   return (
     <>
       <main className={styles.g_main}>
-          <div>
+          <div className={styles.search_section}>
             <a href='/'>
               <img src='/google.png' alt="google_logo" height='80px' width='auto'/>
             </a>
           </div>
-          <div className={styles.search_section}>
+          <div>
             <form className={styles.g_form}>
               <div  className={styles.g_search}>
                 <div>

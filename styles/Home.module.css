@@ -1,9 +1,6 @@
 .g_main {
   margin: 100px 0px;
-  flex: 1;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
+  display: grid;
   justify-content: center;
   align-items: center;
 }
@@ -14,9 +11,7 @@
   color: #4285f4;
 }
 .search_section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin: auto;
 }
 
 .g_form {
@@ -24,9 +19,6 @@
   padding: 0.8em;
 }
 .g_search {
-  
-  height: auto;
-  width: auto;
   display: flex;
   flex-direction: row;
   justify-items: center;
@@ -41,7 +33,6 @@
 .g_search > input {
   flex-grow: 1;
   width: 350px;
-  font-family: Arial, sans-serif;
   font-weight: 400;
   font-size: 14px;
   border: none;
