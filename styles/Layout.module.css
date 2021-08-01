@@ -25,18 +25,17 @@
 .menu {
   color: #5f6368;
   display: flex;
-  height: 32px;
-  width: 32px;
+  height: auto;
+  padding: 5px;
+  width: auto;
   border-radius: 50px;
   justify-content: center;
   align-items: center;
 }
-.menu:hover {
+.menu:hover,.menu:active, .menu:focus {
   background: #f2f2f2;
 }
-.menu:active {
-  background: #f2f2f2;
-}
+ 
 .avatar {
   display: flex;
   padding: 10px;

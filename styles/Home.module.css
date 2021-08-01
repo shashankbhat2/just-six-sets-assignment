@@ -21,7 +21,7 @@
 
 .g_form {
   width: 100%;
-  padding: 1em;
+  padding: 0.8em;
 }
 .g_search {
   
@@ -94,8 +94,8 @@
   list-style: none;
 }
 .lang_options > li{
-  margin: 0px 8px;
+  margin: 0px 5px;
 }
 .lang_options > li > a{
-  color: darkblue;
+  color: #1a0dab;
 }

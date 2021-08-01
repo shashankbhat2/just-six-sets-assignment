@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import {MdApps} from 'react-icons/md'
 import styles from '../../styles/Layout.module.css'
-import Link from 'next/link'
 
 const Layout = ({children}) => {
     return(
@@ -10,25 +9,21 @@ const Layout = ({children}) => {
         <link rel="preconnect" href="https://fonts.googleapis.com"/>
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet"/>
-        <title>Google | Assignment</title>
+        <title>Just Six Sets Assignment</title>
         <meta name="description" content="A clone of Google Homepage UI By Shashank Bhat" />
       </Head>
       <header>
         <nav  className={styles.g_nav}>
           <ul>
             <li>
-              <Link href='/'>
-                <a>
+                <a href='/'>
                   Gmail
                 </a>
-              </Link>
             </li> 
             <li>
-              <Link href='/'>
-                <a>
+                <a href='/'>
                   Images
                 </a>
-              </Link>
             </li> 
           </ul>
           <div className={styles.icons}>

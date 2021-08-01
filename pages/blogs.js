@@ -41,6 +41,7 @@ const Blogs = ({posts}) => {
             <div className={styles.blogs_container}> 
                 {posts.map((post) => (
                     <div className={styles.blog_card}>
+                        <small>{post.id}</small>
                         <h3>{post.title}</h3>
                         <p>{post.body}</p>
                     </div>
