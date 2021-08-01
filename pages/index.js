@@ -8,7 +8,7 @@ const Home = () =>  {
       <main className={styles.g_main}>
           <div>
             <a href='/'>
-              <img src='/google.png' alt="google_logo" height='auto' width='auto'/>
+              <img src='/google.png' alt="google_logo" height='80px' width='auto'/>
             </a>
           </div>
           <div className={styles.search_section}>
@@ -29,6 +29,20 @@ const Home = () =>  {
                 </Link>
               </div>
             </form>
+          </div>
+          <div className={styles.lang}>
+            <ul className={styles.lang_options}>
+              Google offered in: 
+              <li><a href="/">हिन्दी</a></li>
+              <li><a href="/">বাংলা</a></li>
+              <li><a href="/">తెలుగు</a></li>
+              <li><a href="/">मराठी</a></li>
+              <li><a href="/">தமிழ்</a></li>
+              <li><a href="/">ગુજરાતી</a></li>
+              <li><a href="/">ಕನ್ನಡ</a></li>
+              <li><a href="/">മലയാളം</a></li>
+              <li><a href="/">ਪੰਜਾਬੀ</a></li>
+            </ul>
           </div>
         </main>
     </>
