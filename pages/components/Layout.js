@@ -46,7 +46,7 @@ const Layout = ({children}) => {
              <p>India</p> 
           </div>
           <div className={styles.footer_links}>
-            <ul >
+            <ul>
               <li>
                 <a href="/">
                   About
