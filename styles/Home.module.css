@@ -24,10 +24,14 @@
   padding: 1em;
 }
 .g_search {
-  height: 45px;
+  
+  height: auto;
   width: auto;
-  padding: 10px;
   display: flex;
+  flex-direction: row;
+  justify-items: center;
+  align-content: center;
+  padding: 10px;
   border-radius: 100px;
   border: 0.5px solid #e0e0e0;
 }
@@ -35,10 +39,10 @@
   padding: 2px;
 }
 .g_search > input {
+  flex-grow: 1;
   width: 350px;
   font-family: Arial, sans-serif;
-  font-weight: 100;
-  flex-grow: 5;
+  font-weight: 400;
   font-size: 14px;
   border: none;
 }
