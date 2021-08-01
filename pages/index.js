@@ -17,7 +17,7 @@ const Home = () =>  {
                 <div>
                   <MdSearch className={styles.search} size='18px' />
                 </div>
-                <input type="text" />
+                <input type="text" autoFocus={true} />
                 <div>
                   <MdMic className={styles.mic} size='18px' />
                 </div>
