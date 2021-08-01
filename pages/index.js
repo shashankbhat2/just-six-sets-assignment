@@ -15,11 +15,11 @@ const Home = () =>  {
             <form className={styles.g_form}>
               <div  className={styles.g_search}>
                 <div>
-                  <MdSearch className={styles.search} size='18px' />
+                  <MdSearch className={styles.search} size='20px' />
                 </div>
                 <input type="text" autoFocus={true} />
                 <div>
-                  <MdMic className={styles.mic} size='18px' />
+                  <MdMic className={styles.mic} size='20px' />
                 </div>
               </div>
               <div className={styles.buttons}>
