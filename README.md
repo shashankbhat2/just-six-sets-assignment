@@ -1,6 +1,6 @@
 # Just Six Sets Assignment 
 
-![The San Juan Mountains are beautiful!](/public/preview.png "San Juan Mountains")
+![Preview!](/public/preview.png "San Juan Mountains")
 
 
 ### Objective
